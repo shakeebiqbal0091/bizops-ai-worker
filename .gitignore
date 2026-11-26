@@ -1,17 +1,21 @@
-@"
+
 # Python
 __pycache__/
 *.py[cod]
 *.egg-info/
+
+# Testing and formatting
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
 
-# Virtual Environment
+# Virtual environments
 .venv/
 venv/
 
-# Environment Variables
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
@@ -20,14 +24,9 @@ venv/
 .vscode/
 .idea/
 
-# Operating System
+# Operating system
 .DS_Store
 Thumbs.db
 
 # Logs
 *.log
-
-# Test Coverage
-.coverage
-htmlcov/
-"@ | Set-Content -Encoding utf8 .gitignore
