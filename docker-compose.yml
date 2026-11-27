@@ -6,7 +6,7 @@ services:
       POSTGRES_PASSWORD: bizops_owner_dev   # dev only
       POSTGRES_DB: bizops
     ports:
-      - "5432:5432"   # change the left side if Windows Postgres already uses 5432
+      - "127.0.0.1:55432:5432"   # change the left side if Windows Postgres already uses 5432
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro

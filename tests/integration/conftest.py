@@ -8,11 +8,11 @@ from sqlalchemy import Engine, create_engine
 
 OWNER_URL = os.environ.get(
     "BIZOPS_TEST_MIGRATION_DATABASE_URL",
-    "postgresql+psycopg://bizops_owner:bizops_owner_dev@localhost:5432/bizops_test",
+    "postgresql+psycopg://bizops_owner:bizops_owner_dev@127.0.0.1:55432/bizops_test",
 )
 APP_URL = os.environ.get(
     "BIZOPS_TEST_DATABASE_URL",
-    "postgresql+psycopg://bizops_app:bizops_app_dev@localhost:5432/bizops_test",
+    "postgresql+psycopg://bizops_app:bizops_app_dev@127.0.0.1:55432/bizops_test",
 )
 
 
